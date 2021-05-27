@@ -1,0 +1,98 @@
+body {
+	background-color: #4fdddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	font-family: sans-serif;
+}
+body > h1 {
+	font-size: 2.5em;
+	color: darkmagenta;
+	margin-bottom: 2em;
+}
+#rangeGame {
+	background-color: bisque;
+	min-height: 350px;
+	width: 350px;
+	border-radius: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+}
+#message {
+	font-size: 1.5em;
+	text-align: center;
+}
+#lastProp {
+	text-align: center;
+	margin: 0.2em;
+	min-height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ededed;
+	border-radius: 30px;
+	margin-top: 10px;
+}
+.range {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 30px;
+	flex: 1;
+}
+.range > div {
+	background-color: #dedede;
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-size: 20px;
+}
+.range > div:nth-child(1)::after {
+	content: '<';
+	position: absolute;
+	right: -25px;
+}
+.range > div:nth-child(3)::before {
+	content: '<';
+	position: absolute;
+	left: -25px;
+}
+form {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+}
+form input[type='number'] {
+	border: 0;
+	padding: 10px;
+	border-radius: 30px;
+	background-color: #ededed;
+	flex: 1;
+	font-size: 20px;
+}
+button {
+	border: 0;
+	padding: 10px;
+	border-radius: 30px;
+	background-color: #3535c0;
+	color: white;
+	font-size: 15px;
+}
+.hidden {
+	display: none;
+}
+
+#replayGame {
+	margin-top: 10px;
+}
